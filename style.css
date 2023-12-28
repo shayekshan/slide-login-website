@@ -14,9 +14,9 @@ body {
     height: 500px;
     background: gold;
     overflow: hidden;
-    background: url(images/jpg-1.jpg)no-repeat center / cover;
+    background: url(images/sunset-mountain-retrowave-scenery-digital-art-4k-wallpaper-uhdpaper.com-187@1@n.jpg)no-repeat center / cover;
     border-radius: 13px;
-    box-shadow: 5px 20px 50px greenyellow;
+    box-shadow: 5px 20px 50px rgb(0, 200, 255);
 }
 
 #chk {
@@ -43,12 +43,12 @@ label {
 input {
     width: 60%;
     height: 20px;
-    background: #014087;
+    background: transparent;
     display: flex;
     justify-content: center;
     margin: 20px auto;
     padding: 10px;
-    border: none;
+    border: 2px solid rgb(0, 0, 0);
     outline: none;
     border-radius: 8px;
 }
@@ -60,12 +60,42 @@ button {
     justify-content: center;
     display: block;
     color: #fff;
-    background: #007872;
-    font-weight: bold;
+    background: #000000;
+    font-weight: 500;
     font-size: 1em;
     margin-top: 20px;
     outline: none;
     border-radius: 8px;
     transition: 2s ease-in;
     cursor: pointer;
+}
+
+button:hover {
+    background: #00cbfd;
+}
+
+.login {
+    height: 460px;
+    background: url(images/jpg-1.jpg)no-repeat center / cover;
+    border-radius: 50% / 10%;
+    transform: translateY(-180px);
+    transition: 4s ease-in-out;
+}
+
+.login label {
+    color: rgb(255, 255, 255);
+    transform: scale(.6);
+}
+
+#chk:checked~.login {
+    transform: translateY(-500px);
+}
+
+#chk:checked~.login label {
+    transform: scale(1);
+}
+
+#chk:checked~.signup label {
+    transform: scale(.6);
+
 }
